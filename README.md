@@ -34,3 +34,9 @@ And don't forget to configure `vim` as you commit message editor. Also, please a
     git config --global core.editor vim
     git config --global user.email cosmo@kram.er
     git config --global user.name cosmo
+
+## LAMP
+
+I know you've been having some problems in the past with configuring the LAMP stack. I found this easy peasy lemon squeezy tutorial at [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04) that you can consult if the urge is there.
+
+I will simplify it for you when the time is right.
