@@ -29,7 +29,7 @@ Surely you forgot to backup your generated SSH key used by `git`. Well, just run
 
     ssh-keygen -t rsa -b 4096 -C cosmo@kram.er -f ~/.ssh/id_rsa -N ""
 
-And don't forget to configure `vim` as you commit message editor. Also, please add your e-mail and name for convenience.
+And don't forget to configure `vim` as your commit message editor. Also, please add your e-mail and name for convenience.
 
     git config --global core.editor vim
     git config --global user.email cosmo@kram.er
