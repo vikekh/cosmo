@@ -15,7 +15,7 @@ Install script with some useful snippets below.
 
 ## Git
 
-    ssh-keygen -t rsa -b 4096 -C cosmo@kram.er -f ~/.ssh/id_rsa -N ""
+    ssh-keygen -t rsa -b 4096 -C spip@example.com -f ~/.ssh/id_rsa -N ""
 
     git config --global core.editor vim
     git config --global user.email spip@example.com
