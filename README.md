@@ -2,7 +2,7 @@
 
 Install script with some useful snippets below.
 
-## `fstab`
+## Fstab
 
 `/etc/fstab`:
 
@@ -13,7 +13,7 @@ Install script with some useful snippets below.
     username=spip
     password=spip
 
-## `git`
+## Git
 
     ssh-keygen -t rsa -b 4096 -C cosmo@kram.er -f ~/.ssh/id_rsa -N ""
 
