@@ -2,7 +2,7 @@
 
 Dear Viktor,
 
-This is a handy repository for you when you've f\*\*\*ed your system. Just run the provided install script and consult below config snippets if need be.
+This is a handy repository for you when you've f\*\*\*ed your system. Run the provided install script and consult config snippets below if need be.
 
 ## Fstab
 
