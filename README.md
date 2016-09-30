@@ -1,6 +1,8 @@
 # Spip
 
-Install script with some useful snippets below.
+Dear Viktor,
+
+This is a handy repository for you when you've f\*\*\*ed your system. Just run the provided install script and consult below config snippets if need be.
 
 ## Fstab
 
