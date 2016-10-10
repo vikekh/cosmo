@@ -16,7 +16,8 @@ sudo add-apt-repository -y "deb http://repository.spotify.com stable non-free"
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 
 # apt-get
-sudo apt-get update && sudo apt-get install -y apache2 cifs-utils classicmenu-indicator dropbox git gksu google-chrome-stable libapache2-mod-php mysql-server nodejs nodejs-legacy npm php php-cli php-mysql rar spotify-client sublime-text texlive-full vim vlc
+packages="$(xargs printf ',%s' < packages | cut -b 2-)"
+sudo apt-get update && sudo apt-get install -y $packages
 
 # composer
 mkdir ~/bin
