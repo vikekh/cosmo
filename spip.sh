@@ -16,7 +16,7 @@ sudo add-apt-repository -y "deb http://repository.spotify.com stable non-free"
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 
 # apt-get
-packages="$(xargs printf ',%s' < packages | cut -b 2-)"
+packages="$(xargs printf ' %s' < packages | cut -b 2-)"
 sudo apt-get update && sudo apt-get install -y $packages
 
 # composer
