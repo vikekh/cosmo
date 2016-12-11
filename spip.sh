@@ -7,7 +7,7 @@ function spip-echo {
 spip-echo "Hello!"
 spip-echo "Adding repositories..."
 
-for file in /sources/*.sh
+for file in sources/*.sh
 do
     sudo chmod +x $file
     sudo "./$file"
@@ -23,7 +23,7 @@ if command -v php >/dev/null 2>&1
 then
     spip-echo "Installing php packages..."
     
-    for file in /post/php*.sh
+    for file in post/php*.sh
     do
         sudo chmod +x $file
         sudo "./$file"
@@ -38,7 +38,7 @@ if command -v npm >/dev/null 2>&1
 then
     spip-echo "Installing npm packages..."
     
-    for file in /post/npm*.sh
+    for file in post/npm*.sh
     do
         sudo chmod +x $file
         sudo "./$file"
