@@ -6,8 +6,9 @@ function spip-echo {
 
 spip-echo "Hello!"
 spip-echo "Adding repositories..."
+codename=$(lsb_release -c -s)
 
-for file in sources/*.sh
+for file in "sources/$codename*.sh"
 do
     sudo chmod +x $file
     sudo "./$file"
