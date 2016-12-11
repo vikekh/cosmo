@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo chmod +x sources.shsu
+sudo chmod +x sources.sh composer.sh npm.sh
 sudo ./sources.sh
 packages="$(xargs printf ' %s' < packages | cut -b 2-)"
 sudo apt-get update && sudo apt-get install -y $packages
