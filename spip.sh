@@ -6,10 +6,11 @@ function spip-echo {
 
 spip-echo "Hello!"
 spip-echo "Adding repositories..."
-codename=$(lsb_release -c -s)
+codename = $(lsb_release -c -s)
 
-release="$(lsb_release -i -s) $(lsb_release -r -s)"
-echo $release | tr A-Z a-z | tr " " "-"
+release = "$(lsb_release -i -s) $(lsb_release -r -s)"
+release = ${release,,}
+release = ${release// /-}
 
 for file in "sources/$codename*.sh"
 do
