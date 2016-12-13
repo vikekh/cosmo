@@ -6,17 +6,20 @@ function spip-echo {
 
 spip-echo "Hello!"
 spip-echo "Adding repositories..."
-codename = $(lsb_release -c -s)
+release="$(lsb_release -i -s) $(lsb_release -r -s)"
+release=${release,,}
+release=${release// /-}
 
-release = "$(lsb_release -i -s) $(lsb_release -r -s)"
-release = ${release,,}
-release = ${release// /-}
+if [ -d "sources/$release" ]
+then
+    spip-echo "Found directory."
+fi
 
-for file in "sources/$codename*.sh"
-do
-    sudo chmod +x $file
-    sudo "./$file"
-done
+#for file in "sources/$codename*.sh"
+#do
+#    sudo chmod +x $file
+#    sudo "./$file"
+#done
 
 spip-echo "Done adding repositories."
 spip-echo "Installing packages..."
