@@ -12,7 +12,7 @@ spip-echo "Adding $release repositories..."
 
 if [ -d "sources/$release" ]
 then
-    for file in "sources/$release/*.sh"
+    for file in "sources/$release"/*.sh
     do
         sudo chmod +x $file
         sudo "./$file"
