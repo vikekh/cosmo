@@ -25,7 +25,7 @@ packages="$(xargs printf ' %s' < packages | cut -b 2-)"
 sudo apt-get update && sudo apt-get install -y $packages
 spip-echo "Done installing packages."
 
-if [ command -v php >/dev/null 2>&1 ]
+if command -v php >/dev/null 2>&1
 then
     spip-echo "Installing php packages..."
     
@@ -40,7 +40,7 @@ else
     spip-echo "php is not installed."
 fi
 
-if [ command -v npm >/dev/null 2>&1 ]
+if command -v npm >/dev/null 2>&1
 then
     spip-echo "Installing npm packages..."
     
