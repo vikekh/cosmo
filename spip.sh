@@ -35,7 +35,7 @@ packages="$(xargs printf ' %s' < packages/default | cut -b 2-)"
 if [ -f "packages/$release" ]
 then
     spip-echo "Found $release packages."
-    packages="$packages $(xargs printf ' %s' < 'packages/$release' | cut -b 2-)"
+    packages="$packages $(xargs printf ' %s' < packages/$release | cut -b 2-)"
 fi
 
 sudo apt-get update && sudo apt-get install -y $packages
