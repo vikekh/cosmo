@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo npm install -g bower
+npm install -g bower
