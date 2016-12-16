@@ -4,14 +4,8 @@ function spip-echo {
     echo "spip: $1"
 }
 
-if [ $1 = "-v" -o $1 = "--version" ]
-then
-    version=$(<version)
-    spip-echo "v$version"
-    exit 1
-fi
-
-spip-echo "Hello!"
+version=$(<version)
+spip-echo "Hello! This is spip v$version."
 spip-echo "Adding sources..."
 
 for file in sources/*.sh
