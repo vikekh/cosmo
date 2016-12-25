@@ -1,8 +1,6 @@
 #!/bin/bash
 
-function spip-echo {
-    echo "spip: $1"
-}
+. utils.sh
 
 version=$(<version)
 spip-echo "Hello! This is spip v$version."
