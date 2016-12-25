@@ -4,7 +4,7 @@ Dear Viktor,
 
 This is a handy script when you have botched your system.
 
-    wget -O ~/Downloads/spip.zip https://github.com/vikekh/spip/archive/0.2.0.zip && unzip ~/Downloads/spip.zip && rm ~/Downloads/spip.zip && mv ~/spip-0.2.0 ~/spip && cd ~/spip && sudo chmod +x spip.sh && sudo ./spip.sh && cd ..
+    wget -O ~/Downloads/spip.zip https://github.com/vikekh/spip/archive/v0.2.1.zip && unzip ~/Downloads/spip.zip && rm ~/Downloads/spip.zip && mv ~/spip-0.2.1 ~/spip && cd ~/spip && sudo chmod +x spip.sh && sudo ./spip.sh && cd ..
 
 ## Fstab
 
