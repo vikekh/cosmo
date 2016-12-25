@@ -4,6 +4,10 @@ Dear Viktor,
 
 This is a handy repository for you when you've f\*\*\*ed your system. Run the provided install script and consult config snippets below if need be.
 
+Download the latest version of the script and execute it:
+
+    wget -O ~/Downloads/spip.zip https://github.com/vikekh/spip/archive/master.zip && unzip ~/Downloads/spip.zip && rm ~/Downloads/spip.zip && mv ~/spip-master ~/spip && cd ~/spip && sudo chmod +x spip.sh && sudo ./spip.sh && cd ..
+
 ## Fstab
 
 `/etc/fstab`:
