@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. utils.sh
+. common.sh
 version=$(<version)
 spip-echo "Hello! This is spip v$version."
 spip-echo "Adding sources..."

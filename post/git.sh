@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. utils.sh
+. common.sh
 spip-echo "git_email:"
 read git_email
 spip-echo "git_name:"
