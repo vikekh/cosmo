@@ -2,11 +2,9 @@
 
 Dear Viktor,
 
-This is a handy repository for you when you've f\*\*\*ed your system. Run the provided install script and consult config snippets below if need be.
+This is a handy script when you have botched your system.
 
-Download the latest version of the script and execute it:
-
-    wget -O ~/Downloads/spip.zip https://github.com/vikekh/spip/archive/master.zip && unzip ~/Downloads/spip.zip && rm ~/Downloads/spip.zip && mv ~/spip-master ~/spip && cd ~/spip && sudo chmod +x spip.sh && sudo ./spip.sh && cd ..
+    wget -O ~/Downloads/spip.zip https://github.com/vikekh/spip/archive/0.2.0.zip && unzip ~/Downloads/spip.zip && rm ~/Downloads/spip.zip && mv ~/spip-0.2.0 ~/spip && cd ~/spip && sudo chmod +x spip.sh && sudo ./spip.sh && cd ..
 
 ## Fstab
 
@@ -18,14 +16,6 @@ Download the latest version of the script and execute it:
 
     username=spip
     password=spip
-
-## Git
-
-    ssh-keygen -t rsa -b 4096 -C spip@example.com -f ~/.ssh/id_rsa -N ""
-
-    git config --global core.editor vim
-    git config --global user.email spip@example.com
-    git config --global user.name spip
 
 ## LAMP
 
