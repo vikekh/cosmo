@@ -1,8 +1,10 @@
 #!/bin/bash
 
-spip-echo "git demands your e-mail address:"
+. ../utils.sh
+
+spip-echo "git_email:"
 read git_email
-spip-echo "git demands your name:"
+spip-echo "git_name:"
 read git_name
 ssh-keygen -t rsa -b 4096 -C "$git_email" -f ~/.ssh/id_rsa -N ""
 git config --global core.editor vim
